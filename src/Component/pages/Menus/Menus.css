@@ -1,0 +1,33 @@
+.navbar-profile-pic img{
+border-radius: 100%;
+height: 150px;
+width: 150px;
+display: flex;
+vertical-align: middle;
+margin: 0 auto;
+border: 10px solid#E88D67;
+/* margin-top: 20px; */
+
+}
+.nav-item{
+    color: aliceblue;
+    margin-top: 20px;
+  
+
+}
+.nav-link{
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 40px;
+
+}
+.nav-link svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+.nav-link:hover{
+color: #E88D67;
+}
