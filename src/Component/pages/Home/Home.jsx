@@ -1,15 +1,15 @@
+import { FaCloudDownloadAlt } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-
 const Home = () => {
   return (
-    <div className="py-10 text-white bg-blue-900">
+    <div className="py-20 text-white bg-[rgb(0,105,137)]" >
       <div className="container px-4 mx-auto">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Hi 👏 I'm a </h2>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
-            <span className='text-[#F3F7EC]'>Mst: Rebeka</span> Sultana
+        <div className="text-center *:my-3">
+          <h2 className="text-xl font-bold " data-aos="fade-right">Hi 👏 I'm a </h2>
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl" data-aos="fade-right">
+            <span className='text-[#E88D67]'>Mst: Rebeka</span> Sultana
           </h1>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl uppercase text-[rgb(232,141,103)]" data-aos="fade-right">
             <Typewriter
               options={{
                 strings: [
@@ -22,19 +22,20 @@ const Home = () => {
               }}
             />
           </h1>
-          <p className="max-w-lg mx-auto mt-5 text-lg md:text-xl lg:text-2xl">
+          <p className="max-w-lg mx-auto mt-5 text-lg md:text-xl lg:text-2xl" data-aos="fade-right">
             A MERN stack developer specializing in building web applications using MongoDB, Express.js, React, and Node.js.
           </p>
           <div className="flex flex-col items-center justify-center mt-5 md:flex-row">
-            <button className="px-6 py-2 mb-3 font-semibold text-blue-900 transition duration-300 ease-in-out bg-white rounded-lg shadow-lg hover:bg-blue-200 focus:outline-none md:mb-0 md:mr-3">
+            <button className=" text-[#E88D67] px-6 py-2 mb-3 font-semibold transition duration-300 ease-in-out bg-white rounded-lg shadow-lg hover:bg-blue-200 focus:outline-none md:mb-0 md:mr-3" data-aos="fade-right">
               Hire Me
             </button>
             <a
-              className="px-6 py-2 font-semibold text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-lg shadow-lg hover:bg-white hover:text-blue-900 focus:outline-none"
-              href="https://docs.google.com/document/d/1yjTwM5GjxojsgFatQKaJwlU1jzfJfR8QBPobJmaFI7M/edit?usp=sharing"
+              data-aos="fade-right"
+              className="flex items-center justify-center gap-2 px-6 py-2 font-semibold text-white transition duration-300 ease-in-out bg-transparent border border-white rounded-lg shadow-lg hover:bg-white hover:text-blue-900 focus:outline-none"
+              href="https://drive.google.com/file/d/1hQii66lhkJgns-TJTCzxZinUQNIAqgfW/view?usp=sharing"
               download="reba.pdf"
             >
-              My Resume
+              My Resume <FaCloudDownloadAlt />
             </a>
           </div>
         </div>

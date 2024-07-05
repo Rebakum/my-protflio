@@ -1,0 +1,17 @@
+.diamond {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background: #F3F7EC;
+}
+
+.diamond img {
+    transform: rotate(-45deg);
+    width: 60px;
+    height: 60px;
+    border-radius: 10;
+}

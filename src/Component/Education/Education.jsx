@@ -1,18 +1,18 @@
 import React from "react";
 import { MdSchool } from "react-icons/md";
 import {
-    VerticalTimeline,
-    VerticalTimelineElement,
+  VerticalTimeline,
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 const Education = () => {
   return (
-    <div className="my-20 education" id="education">
-      <h2 className="mb-3 text-3xl text-center text-[#005C78] uppercase">
+    <div className="py-20 bg-[#006989]  education" id="education">
+      <h2 className="mb-10  text-center text-[#F3F7EC]  text-4xl font-bold uppercase">
         Education Details
       </h2>
-      <hr />
+      
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
