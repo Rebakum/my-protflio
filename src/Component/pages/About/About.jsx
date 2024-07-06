@@ -1,13 +1,13 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
 import portfolio from '../../../assets/images/profile.png';
-import './About.css';
+
 
 const About = () => {
     return (
-        <div className="w-full bg-[#006989] p-10 mx-auto  shadow-xl  text-[#F3F7EC]  ">
+        <div className="w-full bg-[#005C78]  p-10 mx-auto  shadow-xl  text-[#F3F7EC]  ">
             <Zoom>
-                <div className="flex flex-col lg:flex-row lg:justify-between items-center container my-20 h-auto lg:h-[300px]">
+                <div className="flex flex-col lg:flex-row lg:justify-between items-center my-20 h-auto lg:h-[300px]">
                     <div className="w-full p-3 lg:w-3/4">
                         <h1 className="my-3  text-4xl font-bold text-center text-white uppercase border-b-2 border-[#E88D67]">About Me</h1>
                         <p className="p-5">

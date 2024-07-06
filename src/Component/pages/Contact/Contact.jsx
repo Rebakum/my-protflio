@@ -32,8 +32,8 @@ const Contact = () => {
     };
 
     return (
-        <div className="py-20 bg-[#006989]" id="contact">
-            <div className="container px-6 mx-auto lg:px-20">
+        <div className=" bg-[#006989] py-20"  id="contact">
+            <div className="px-6 mx-auto lg:px-20">
                 <div className="overflow-hidden bg-white rounded-lg shadow-md">
                     <div className="md:flex">
                         <div className=" md:w-1/2">

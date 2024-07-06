@@ -11,7 +11,7 @@ import touristGuide from '../../assets/images/tourist-guide.png';
 
 const Projects = () => {
   return (
-    <div className="container bg-[#005C78] py-20 px-10  ">
+    <div className=" bg-[#005C78] py-20 px-10  ">
       <h2 className="mb-3 text-4xl font-bold text-center text-white uppercase">
         TOP RECENT PROJECTS
       </h2>

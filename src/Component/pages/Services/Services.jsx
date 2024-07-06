@@ -4,7 +4,7 @@ import { Fade, Zoom } from 'react-reveal';
 
 const Services = () => {
   return (
-    <div className="container mx-auto py-20 px-10 bg-[#005C78]">
+    <div className=" mx-auto py-20 px-10 w-full bg-[#006989]">
 
       <h2 className="mb-10 text-4xl font-bold text-center text-white uppercase">
         My Services

@@ -2,14 +2,14 @@ import { FaCloudDownloadAlt } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 const Home = () => {
   return (
-    <div className="py-20 text-white bg-[rgb(0,105,137)]" >
+    <div className="py-20 text-white bg-[#006989]  h-[350px]"  id='home'>
       <div className="container px-4 mx-auto">
         <div className="text-center *:my-3">
           <h2 className="text-xl font-bold " data-aos="fade-right">Hi 👏 I'm a </h2>
           <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl" data-aos="fade-right">
             <span className='text-[#E88D67]'>Mst: Rebeka</span> Sultana
           </h1>
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl uppercase text-[rgb(232,141,103)]" data-aos="fade-right">
+          <h1 className="text-xl  font-bold md:text-2xl lg:text-4xl uppercase text-[rgb(232,141,103)]" data-aos="fade-right">
             <Typewriter
               options={{
                 strings: [
@@ -22,10 +22,8 @@ const Home = () => {
               }}
             />
           </h1>
-          <p className="max-w-lg mx-auto mt-5 text-lg md:text-xl lg:text-2xl" data-aos="fade-right">
-            A MERN stack developer specializing in building web applications using MongoDB, Express.js, React, and Node.js.
-          </p>
-          <div className="flex flex-col items-center justify-center mt-5 md:flex-row">
+         
+          <div className="flex flex-col items-center justify-center pt-5 md:flex-row">
             <button className=" text-[#E88D67] px-6 py-2 mb-3 font-semibold transition duration-300 ease-in-out bg-white rounded-lg shadow-lg hover:bg-blue-200 focus:outline-none md:mb-0 md:mr-3" data-aos="fade-right">
               Hire Me
             </button>

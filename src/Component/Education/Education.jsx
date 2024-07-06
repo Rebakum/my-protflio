@@ -39,7 +39,7 @@ const Education = () => {
         >
           <h3 className="vertical-timeline-element-title">H.S.C</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Buiragir Chore High School
+            Philipnagor Maricha college
           </h4>
         </VerticalTimelineElement>
       </VerticalTimeline>

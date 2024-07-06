@@ -3,6 +3,7 @@
     background-color: #006989;
     height: 100vh;
     z-index: 1000;
+    position: fixed;
 
 }
 
