@@ -1,24 +1,28 @@
 import React from 'react';
-import Zoom from 'react-reveal/Zoom';
 import portfolio from '../../../assets/images/profile.png';
 
 
 const About = () => {
     return (
-        <div className="w-full bg-[#005C78]  p-10 mx-auto  shadow-xl  text-[#F3F7EC]  ">
-            <Zoom>
-                <div className="flex flex-col lg:flex-row lg:justify-between items-center my-20 h-auto lg:h-[300px]">
-                    <div className="w-full p-3 lg:w-3/4">
-                        <h1 className="my-3  text-4xl font-bold text-center text-white uppercase border-b-2 border-[#E88D67]">About Me</h1>
-                        <p className="p-5">
+        <div id='about'
+         className="w-full py-20   mx-auto border-t border-t-blue-950   text-[#F3F7EC]  ">
+                <h1 className="text-3xl font-bold text-center text-white uppercase title-border lg:text-4xl text">About Me</h1>
+
+        
+                <div className="flex flex-col lg:gap-10 lg:justify-between items-center lg:flex-row-reverse my-20 px-10  h-auto lg:h-[300px]">
+                   
+                <div className="flex-1 w-full lg:w-1/2">
+                       
+                        <p className="text-justify">
                             I am a passionate Front-End Web Developer with a robust foundation in HTML, CSS, Tailwind CSS, and JavaScript. My expertise extends to building dynamic, responsive web applications using React.js, and I am well-versed in back-end technologies such as Node.js with MongoDB. I have hands-on experience in building dynamic, responsive web applications. I am passionate about coding and continuously learning new technologies to enhance my capabilities. I thrive in collaborative environments and am committed to delivering high-quality, efficient solutions.
+                            I thrive in collaborative environments and am committed to delivering high-quality, efficient solutions.
                         </p>
                     </div>
-                    <div className="flex items-center justify-center w-full p-3 ">
-                        <img className="w-full " src={portfolio} alt="portfolio" />
+                    <div className="items-center justify-center flex-1 w-full ">
+                        <img className="w-full rounded-lg " src={portfolio} alt="portfolio" />
                     </div>
                 </div>
-            </Zoom>
+            
 
         </div>
     );

@@ -21,15 +21,19 @@ const TechStack = () => {
     }, []);
 
     return (
-        <div className="py-20 bg-[#005C78]">
-            <h2 className="mb-3 text-4xl font-bold text-center  text-[#F3F7EC] uppercase">Technologies Stack</h2>
+        <div id='techStack'
+        className="py-20 border-t border-t-blue-950 ">
+            <h2 className="my-10 text-4xl font-bold text-center uppercase title-border text">Technologies Stack</h2>
            
-            <p className="mb-5 text-center">
+            <p className=" text-center text-[#F3F7EC]">
                 👍 Including languages, frameworks, databases, front-end tools, and APIs
             </p>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-10">
                 <div className="flex justify-center mb-4 ">
-                    <div className="bg-white diamond rounded-2xl" data-aos="fade-up">
+                    <div className="bg-white diamond rounded-2xl" data-aos="fade-up
+                    
+                             
+                    ">
                         <img src={html01} alt="HTML" />
                     </div>
                 </div>

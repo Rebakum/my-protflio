@@ -1,53 +1,53 @@
-import React from "react";
-import LightSpeed from "react-reveal/LightSpeed";
-import Rotate from "react-reveal/Rotate";
-import contact from "../../../assets/images/contact.png";
+import React, { useState } from "react";
+import Lottie from 'react-lottie';
+import animation from '../../../assets/lottie.json';
 
 
 const Contact = () => {
+    const [result, setResult] = useState("");
 
-    //handle submit 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const msg = form.msg.value;
-        const message = { name, email, msg };
-        console.log(message);
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
 
-        // try {
-        //     const res = await axios.post("/api/v1/portfolio/sendEmail", message);
+        formData.append("access_key", "b76ad003-7ff6-4c8b-8430-8f585a965ed1");
 
-        //     // validation success
-        //     if (res.data.success) {
-        //         toast.success(res.data.message);
-        //         form.reset(); // Clear the form
-        //     } else {
-        //         toast.error(res.data.message);
-        //     }
-        // } catch (error) {
-        //     toast.error("Something went wrong. Please try again.");
-        // }
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+            setResult("Your message Submitted Successfully");
+            event.target.reset();
+        } else {
+            console.log("Error", data);
+            setResult(data.message);
+        }
     };
 
     return (
-        <div className=" bg-[#006989] py-20"  id="contact">
-            <div className="px-6 mx-auto lg:px-20">
-                <div className="overflow-hidden bg-white rounded-lg shadow-md">
-                    <div className="md:flex">
+        <div className="py-20 border-t border-t-blue-950 " id="contact">
+            <div className="px-5 mx-auto lg:px-10">
+                <div className="overflow-hidden ">
+                <h2 className="text-3xl font-bold text-center text-white uppercase lg:text-4xl title-border">Contact Me</h2>
+
+                    <div className="my-20 border rounded-lg md:flex">
                         <div className=" md:w-1/2">
-                            <LightSpeed>
-                                <img src={contact } alt="contact" className="object-cover w-full h-full" />
-                            </LightSpeed>
+                            
+                            <Lottie animationData={animation }  />
+                           
                         </div>
-                        <div className="p-6 md:w-1/2 sm:p-12">
-                            <Rotate>
-                                <h2 className="mb-6 text-2xl font-bold text-gray-800">Contact Me</h2>
-                                <p className="mb-4 text-gray-600">Feel free to reach out to us by filling the form below or through our social media channels.</p>
+                        <div className="shadow-lg md:w-1/2 sm:p-12">
+                         
+                                <p className="mb-4 text-gray-400">Feel free to reach out to us by filling the form below or through our social media channels.</p>
                                 <form onSubmit={handleSubmit}>
+                                    <input type="hidden" name="access_key" value="b76ad003-7ff6-4c8b-8430-8f585a965ed1" />
                                     <div className="mb-4">
-                                        <label htmlFor="name" className="block mb-2 font-semibold text-gray-700">Name</label>
+                                        <label htmlFor="name" className="block mb-2 font-semibold text-gray-400">Name</label>
                                         <input
                                             type="text"
                                             name="name"
@@ -57,7 +57,7 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="mb-4">
-                                        <label htmlFor="email" className="block mb-2 font-semibold text-gray-700">Email</label>
+                                        <label htmlFor="email" className="block mb-2 font-semibold text-gray-400">Email</label>
                                         <input
                                             type="email"
                                             name="email"
@@ -67,7 +67,7 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="mb-4">
-                                        <label htmlFor="msg" className="block mb-2 font-semibold text-gray-700">Message</label>
+                                        <label htmlFor="msg" className="block mb-2 font-semibold text-gray-400">Message</label>
                                         <textarea
                                             name="msg"
                                             placeholder="Write your message"
@@ -76,13 +76,13 @@ const Contact = () => {
                                         />
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <button className="px-6 py-2 font-semibold text-white bg-[#006989] rounded-lg hover:bg-[#87dffa] hover:text-[#E88D67] focus:outline-none focus:ring-2 focus:ring-b[#006989]">
+                                        <button className="w-full button gradient-border">
                                             Send Message
                                         </button>
-                                        
                                     </div>
                                 </form>
-                            </Rotate>
+                                <span>{result}</span>
+                           
                         </div>
                     </div>
                 </div>
