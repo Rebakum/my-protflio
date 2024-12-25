@@ -20,7 +20,7 @@ const Layout = () => {
 
     return (
         <div className="flex min-h-screen font-poppins ">
-            <div className={`bg-gray-950 text-white ${toggle ? 'w-16' : 'w-64'} transition-width duration-300 ease-in-out fixed  h-full`}>
+            <div className={`bg-gray-800 text-white ${toggle ? 'w-16' : 'w-64'} transition-width duration-300 ease-in-out fixed  h-full`}>
                 <div className="flex justify-end p-2">
                     <button onClick={handleToggle} className="focus:outline-none">
                         {toggle ? <RiArrowRightSLine size={30} /> : <RiArrowLeftSLine size={30} />}
@@ -29,7 +29,7 @@ const Layout = () => {
                 <Menus toggle={toggle} />
             </div>
             <div className="flex-1 transition-all duration-300 ease-in-out " style={{ marginLeft: toggle ? '4rem' : '16rem' }}>
-                <div className="w-full p-4 bg-[#090732]">
+                <div className="w-full bg-[#090732]">
                     <Home />
                     <About />
                     <Services />

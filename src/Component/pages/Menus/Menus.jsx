@@ -105,7 +105,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcHome className="w-6 h-6 mr-2" />Home
               </div>
             </Link>
@@ -115,7 +115,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcAbout className="w-6 h-6 mr-2" />About
               </div>
             </Link>
@@ -125,7 +125,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcPortraitMode className="w-6 h-6 mr-2" />Services
               </div>
             </Link>
@@ -135,7 +135,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcBiotech className="w-6 h-6 mr-2" />Tech stack
               </div>
             </Link>
@@ -145,7 +145,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcReading className="w-6 h-6 mr-2" />Education
               </div>
             </Link>
@@ -155,7 +155,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcWorkflow className="w-6 h-6 mr-2" />Projects
               </div>
             </Link>
@@ -167,7 +167,7 @@ const Menus = ({ toggle }) => {
               smooth={true}
               offset={-100}
               duration={100}>
-              <div className="flex p-1 cursor-pointer hover:text-[#E88D67]">
+              <div className="flex p-3 cursor-pointer hover:text-[#E88D67]">
                 <FcBusinessContact className="w-6 h-6 mr-2" />Contact
               </div>
             </Link>
