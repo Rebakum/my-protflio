@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaLaptopCode, FaMobileAlt, FaPaintBrush } from 'react-icons/fa';
+import React from "react";
+import { FaLaptopCode, FaMobileAlt, FaPaintBrush } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -8,7 +8,7 @@ const Services = () => {
       className="w-full p-10 py-16 mx-auto border-t px- border-t-blue-950 sm:px-16 md:px-20"
     >
       {/* Section Title */}
-      <h2 className="text-4xl font-bold text-center text-gray-100 uppercase my-14 md:my-20">
+      <h2 className="my-10 text-4xl font-bold text-center uppercase title-border text">
         My Services
       </h2>
 
