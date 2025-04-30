@@ -5,15 +5,15 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="w-full p-10 py-16 mx-auto border-t px- border-t-blue-950 sm:px-16 md:px-20"
+      className="container w-full px-20 py-16 mx-auto border-t md:px-16 border-t-blue-950"
     >
       {/* Section Title */}
-      <h2 className="my-10 text-4xl font-bold text-center uppercase title-border text">
+      <h2 className="my-10 text-3xl font-bold text-center uppercase lg:text-4xl title-border">
         My Services
       </h2>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 gap-10 pb-20 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-10 pb-20 md:grid-cols-2 lg:grid-cols-3">
         {/* Web Development Card */}
         <div className="p-6 transition-transform duration-300 border rounded-lg shadow-xl hover:scale-105">
           <div className="flex justify-center mb-4">

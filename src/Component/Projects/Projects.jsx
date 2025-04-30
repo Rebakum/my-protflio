@@ -15,11 +15,13 @@ const Projects = () => {
         TOP RECENT PROJECTS
       </h2>
 
-      <p className="text-center text-white " data-aos="flip-left">
+      <p
+        className="px-6 mx-auto text-justify text-white lg:text-center lg:w-1/2 "
+        data-aos="flip-left"
+      >
         As a dedicated and innovative front-end developer, I've had the
-        opportunity to work on various
-        <br /> exciting projects that showcase my skills in modern web
-        technologies. <br />
+        opportunity to work on various exciting projects that showcase my skills
+        in modern web technologies.
       </p>
       {/* card design 1 */}
       <div className="grid grid-cols-1 gap-5 p-10 my-10 lg:grid-cols-3">

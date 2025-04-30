@@ -8,12 +8,15 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Education = () => {
   return (
-    <div className="py-20 my-20 border-t border-t-blue-950 education" id="education">
+    <div
+      className="container py-20 mx-auto my-20 border-t border-t-blue-950 education"
+      id="education"
+    >
       <h2 className="mb-20 text-3xl font-bold text-center uppercase lg:text-4xl title-border">
         Education Details
       </h2>
-      
-      <VerticalTimeline>
+
+      <VerticalTimeline className="px-16 md:px-5">
         <VerticalTimelineElement
           className=" vertical-timeline-element--education"
           contentStyle={{ background: "#F3F7EC", color: "gray" }}

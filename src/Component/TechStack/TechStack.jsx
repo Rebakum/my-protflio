@@ -21,8 +21,11 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div id="techStack" className="py-20 border-t border-t-blue-950 ">
-      <h2 className="my-10 text-4xl font-bold text-center uppercase title-border text">
+    <div
+      id="techStack"
+      className="container px-16 py-20 mx-auto border-t md:px-20 border-t-blue-950"
+    >
+      <h2 className="my-10 text-3xl font-bold text-center uppercase lg:text-4xl title-border ">
         Technologies Stack
       </h2>
 
